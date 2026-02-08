@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --accent-color: #2091f9;
+  --secondary-green-color: #2dc071;
+  --secondary-orange-color: #f15b07;
+  --text-color-primary: #252b42;
+  --text-color-secondary: #374754;
+  --text-color-light: #ffffff;
+  --background-color-dark: #252b42;
+  --background-color-light: #ffffff;
+  --background-color-gradient: #222b32;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* .button {
+    background-color: var(--accent-color);
+} */

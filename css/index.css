@@ -1,3 +1,10 @@
-body {
-    background-color: cadetblue;
-}
+@import url(global.css);
+@import url(global.header.hero.partial.css);
+@import url(index.section-features.partial.css);
+@import url(index.section-fastest-way.partial.css);
+@import url(index.section-lightning-fast-prototyping.partial.css);
+@import url(index.section-partners.partial.css);
+@import url(index.section-testimonials.partial.css);
+@import url(index.section-pricing.partial.css);
+@import url(index.section-contacts.partial.css);
+@import url(global.footer.partial.css);
