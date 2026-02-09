@@ -1,22 +1,35 @@
 <div class="contacts">
   <div class="contacts__text">
-    <h2>Contact Us</h2>
-    <h4>
+    <h2 class="contacts__text-title">Contact Us</h2>
+    <h4 class="contacts__text-description">
       Most calendars are designed for teams. Slate is designed for freelancers
     </h4>
   </div>
   <div class="contacts__row-content">
     <div class="contacts__row-content-form">
-      <h3>Contact Us</h3>
-      <input type="text" name="name" id="name" placeholder="Your Name" />
-      <input type="text" name="email" id="email" placeholder="Your Email" />
+      <h3 class="contacts__form-title">Contact Us</h3>
       <input
+        class="contacts__form-input-name"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Your Name"
+      />
+      <input
+        class="contacts__form-input-email"
+        type="text"
+        name="email"
+        id="email"
+        placeholder="Your Email"
+      />
+      <input
+        class="contacts__form-input-message"
         type="text"
         name="message"
         id="message"
         placeholder="Your Message"
       />
-      <button>Send</button>
+      <button class="contacts__form-button">Send</button>
     </div>
     <div class="contacts__row-content-address">
       <div class="contacts__address-items">
@@ -44,7 +57,7 @@
               </clipPath>
             </defs>
           </svg>
-          <h6>
+          <h6 class="contacts__items-text">
             6386 Spring St undefined Anchorage, Georgia 12473 United States
           </h6>
         </div>
@@ -61,7 +74,7 @@
               fill="#2091F9"
             />
           </svg>
-          <h6>(843) 555-0130</h6>
+          <h6 class="contacts__items-number">(843) 555-0130</h6>
         </div>
         <div class="contacts__items-email">
           <svg
@@ -76,7 +89,7 @@
               fill="#2091F9"
             />
           </svg>
-          <h6>willie.jennings@example.com</h6>
+          <h6 class="contacts__items-email-text">willie.jennings@example.com</h6>
         </div>
       </div>
       <div class="contacts__address-map">
