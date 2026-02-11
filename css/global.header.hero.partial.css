@@ -1,3 +1,77 @@
 .header {
-    
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/header-photo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  /* V-подібний зріз */
+  clip-path: polygon(0 0, 100% 0, 100% 79%, 50% 100%, 0 79%);
+
+  .header__navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 53px;
+    margin-right: 200px;
+    margin-left: 200px;
+
+    .header__navbar-menu {
+      font-family: graphik, sans-serif;
+      display: flex;
+      font-size: 15px;
+      gap: 40px;
+      margin-top: 13px;
+    }
+    .header__navbar-menu a {
+      font-family: graphik, sans-serif;
+      text-decoration: none;
+      color: var(--text-color-light);
+    }
+    .header__navbar-logo {
+      width: 186px;
+      height: 58px;
+    }
+    .header__navbar-social {
+      display: flex;
+      gap: 44px;
+      justify-content: space-between;
+    }
+  }
+
+  .header__hero {
+    font-family: graphik, sans-serif;
+    color: var(--text-color-light);
+    text-align: center;
+    margin-top: 110px;
+    margin-left: 310px;
+    margin-right: 310px;
+
+    .header__hero-title {
+      font-size: 72px;
+      margin-bottom: 20px;
+    }
+
+    .header__hero-text {
+      font-size: 28px;
+      margin-bottom: 88px;
+    }
+
+    .header__hero-button {
+      font-size: 20px;
+      color: var(--text-color-light);
+      background-color: var(--accent-color);
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      cursor: pointer;
+      height: 52px;
+      width: 236px;
+    }
+  }
 }
