@@ -1,4 +1,4 @@
-.header {
+/* .header {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/header-photo.jpg);
@@ -11,7 +11,6 @@
   flex-direction: column;
   width: 100%;
 
-  /* V-подібний зріз */
   clip-path: polygon(0 0, 100% 0, 100% 79%, 50% 100%, 0 79%);
 
   .header__navbar {
@@ -72,6 +71,146 @@
       cursor: pointer;
       height: 52px;
       width: 236px;
+    }
+  }
+} */
+
+/* Мобайл */
+.header {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/header-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  overflow-x: hidden;
+
+  /* ===== MOBILE ===== */
+  clip-path: none;
+
+  .header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__navbar-logo {
+      width: 130px;
+      height: auto;
+    }
+
+    .header__navbar-menu {
+      display: none;
+      font-family: graphik, sans-serif;
+    }
+
+    .header__navbar-social {
+      display: none;
+    }
+  }
+
+  .header__hero {
+    font-family: graphik, sans-serif;
+    color: var(--text-color-light);
+    text-align: center;
+
+    margin-top: 80px;
+
+    .header__hero-title {
+      font-size: 36px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .header__hero-text {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .header__hero-button {
+      font-size: 16px;
+      height: 52px;
+      padding: 0 28px;
+      border-radius: 50px;
+      background-color: var(--accent-color);
+      color: var(--text-color-light);
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  /* ===== TABLET ===== */
+  @media (min-width: 768px) {
+    padding: 40px;
+
+    .header__navbar {
+      .header__navbar-menu {
+        display: flex;
+        gap: 30px;
+        font-size: 14px;
+      }
+    }
+
+    .header__hero {
+      margin-top: 120px;
+
+      .header__hero-title {
+        font-size: 52px;
+      }
+
+      .header__hero-text {
+        font-size: 22px;
+      }
+    }
+  }
+
+  /* ===== DESKTOP ===== */
+  @media (min-width: 1200px) {
+    padding: 0;
+
+    clip-path: polygon(0 0, 100% 0, 100% 79%, 50% 100%, 0 79%);
+
+    .header__navbar {
+      margin: 53px 200px 0;
+
+      .header__navbar-logo {
+        width: 186px;
+      }
+
+      .header__navbar-menu {
+        gap: 40px;
+        font-size: 15px;
+      }
+
+      .header__navbar-social {
+        display: flex;
+        gap: 44px;
+      }
+    }
+
+    .header__hero {
+      margin: 110px auto 0;
+      max-width: 900px;
+
+      .header__hero-title {
+        font-size: 72px;
+      }
+
+      .header__hero-text {
+        font-size: 28px;
+        margin-bottom: 88px;
+      }
+
+      .header__hero-button {
+        width: 236px;
+        font-size: 20px;
+      }
     }
   }
 }
