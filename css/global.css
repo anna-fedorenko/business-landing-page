@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 *,
 *::after,
 *::before {
@@ -26,9 +32,3 @@ img {
   display: block;
   width: 100%;
 }
-
-/* .container {
-  max-width: 1200px;
-  margin: auto;
-} */
-
