@@ -1,46 +1,79 @@
 .fastest {
   font-family: graphik, sans-serif;
+  padding: 0px 20px 100px 20px;
   display: flex;
-  justify-content: center;
-  margin-left: 230px;
-  margin-right: 230px;
-  margin-bottom: 110px;
-  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.fastest__text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fastest__text-title {
+  color: var(--text-color-primary);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.fastest__text-description {
+  color: var(--text-color-secondary);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  max-width: 320px;
+}
+
+.fastest__text-button {
+  font-family: graphik, sans-serif;
+  font-size: 18px;
+  color: var(--text-color-light);
+  background-color: var(--accent-color);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+.fastest__svg-content {
+  width: 100%;
+  max-width: 500px;
+}
+
+.fastest__svg-content svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .fastest {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+    padding: 0px 80px 135px 80px;
+  }
 
   .fastest__text-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
+  }
 
-    .fastest__text-title {
-      color: var(--text-color-primary);
-      font-size: 48px;
-      margin-bottom: 30px;
-    }
+  .fastest__text-title {
+    font-size: 48px;
+  }
 
-    .fastest__text-description {
-      color: var(--text-color-secondary);
-      font-size: 28px;
-      margin-bottom: 40px;
-    }
-
-    .fastest__text-button {
-      font-family: graphik, sans-serif;
-      font-size: 20px;
-      color: var(--text-color-light);
-      background-color: var(--accent-color);
-      border: none;
-      padding: 15px 30px;
-      border-radius: 50px;
-      cursor: pointer;
-      height: 52px;
-      width: 236px;
-    }
+  .fastest__text-description {
+    font-size: 28px;
+    max-width: 540px;
   }
 
   .fastest__svg-content {
-    width: 500px;
-    height: 300px;
-    display: block;
+    max-width: 625px;
   }
 }

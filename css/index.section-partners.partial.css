@@ -1,0 +1,152 @@
+.partners {
+  font-family: graphik, sans-serif;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners__text {
+  margin-bottom: 40px;
+}
+
+.partners__text-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-color-primary);
+  margin: 0 0 16px 0;
+}
+
+.partners__text-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+  margin: 0;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.partners__items {
+  margin-bottom: 40px;
+}
+
+.partners__items-row-top,
+.partners__items-row-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.partners__items-row-bottom {
+  display: none;
+}
+
+.partners__item-google,
+.partners__item-amazon,
+.partners__item-microsoft,
+.partners__item-uber,
+.partners__item-dropbox {
+  background: var(--background-color-light);
+  border: 1px solid #e6e6e6;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  min-height: 180px;
+}
+
+.partners__item-google-title,
+.partners__item-amazon-title,
+.partners__item-microsoft-title,
+.partners__item-uber-title,
+.partners__item-dropbox-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color-primary);
+  margin: 0;
+}
+
+.partners__item-google-photo,
+.partners__item-amazon-photo,
+.partners__item-microsoft-photo,
+.partners__item-uber-photo,
+.partners__item-dropbox-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+}
+
+.partners__item-google-photo svg {
+  width: 150px;
+  height: auto;
+}
+
+.partners__item-amazon-photo,
+.partners__item-microsoft-photo,
+.partners__item-uber-photo,
+.partners__item-dropbox-photo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.partners__action-button {
+  padding: 16px 32px;
+  background: var(--accent-color);
+  color: var(--background-color-light);
+  border: none;
+  border-radius: 39px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.partners__action-button:hover {
+  background: var(--accent-color);
+}
+
+@media (min-width: 1024px) {
+  .partners {
+    padding: 80px 100px;
+  }
+
+  .partners__text-title {
+    font-size: 48px;
+  }
+
+  .partners__text-description {
+    font-size: 18px;
+  }
+
+  .partners__items-row-top,
+  .partners__items-row-bottom {
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .partners__items-row-bottom {
+    display: flex;
+  }
+
+  .partners__item-google,
+  .partners__item-amazon,
+  .partners__item-microsoft,
+  .partners__item-uber,
+  .partners__item-dropbox {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+  }
+}

@@ -1,0 +1,234 @@
+.pricing {
+  font-family: graphik, sans-serif;
+  padding: 60px 20px;
+  background-color: var(--background-color-dark);
+  text-align: center;
+}
+
+.pricing__text {
+  margin-bottom: 40px;
+}
+
+.pricing__text-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-color-light);
+  margin: 0 0 20px 0;
+}
+
+.pricing__text-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color-light);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing__item-free,
+.pricing__item-standard,
+.pricing__item-business {
+  background-color: var(--background-color-light);
+  border-radius: 12px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__item-standard {
+  /* background: linear-gradient(180deg, #3b9eff 0%, #2b7fd9 100%); */
+  background: var(--accent-color);
+  color: var(--text-color-light);
+  transform: scale(1);
+}
+
+.pricing__free-heading,
+.pricing__standard-heading,
+.pricing__business-heading {
+  margin-bottom: 30px;
+}
+
+.pricing__free-heading-title,
+.pricing__standard-heading-title,
+.pricing__business-heading-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color-primary);
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+}
+
+.pricing__standard-heading-title {
+  color: var(--text-color-light);
+}
+
+.pricing__free-heading-description,
+.pricing__standard-heading-description,
+.pricing__business-heading-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+  margin: 0;
+}
+
+.pricing__standard-heading-description {
+  color: var(--text-color-light);
+}
+
+.pricing__free-price,
+.pricing__standard-price,
+.pricing__business-pricing {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.pricing__free-price-title,
+.pricing__standard-price-title,
+.pricing__business-price-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--text-color-primary);
+  margin: 0;
+  line-height: 1;
+}
+
+.pricing__standard-price-title {
+  color: var(--text-color-light);
+}
+
+.pricing__free-block,
+.pricing__standard-block,
+.pricing__business-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.pricing__free-block-currency,
+.pricing__standard-block-currency,
+.pricing__business-block-currency {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color-primary);
+  margin: 0;
+}
+
+.pricing__standard-block-currency {
+  color: var(--text-color-light);
+}
+
+.pricing__free-block-description,
+.pricing__standard-block-description,
+.pricing__business-block-description {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color-secondary);
+  margin: 0;
+}
+
+.pricing__standard-block-description {
+  color: var(--text-color-light);
+}
+
+.pricing__free-list,
+.pricing__standard-list,
+.pricing__business-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  width: 100%;
+}
+
+.pricing__free-list-item,
+.pricing__standard-list-item,
+.pricing__business-list-item {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+  padding: 12px 0;
+  border-bottom: 1px solid #e6e9ed;
+}
+
+.pricing__standard-list-item {
+  color: var(--text-color-light);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pricing__free-list-item:last-child,
+.pricing__standard-list-item:last-child,
+.pricing__business-list-item:last-child {
+  border-bottom: none;
+}
+
+.pricing__order-button {
+  padding: 16px 40px;
+  background: var(--accent-color);
+  color: var(--text-color-light);
+  border: none;
+  border-radius: 39px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.pricing__item-standard .pricing__order-button {
+  background: var(--background-color-light);
+  color: var(--accent-color);
+}
+
+.pricing__order-button:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 1024px) {
+  .pricing {
+    padding: 80px 100px;
+  }
+
+  .pricing__text-title {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+
+  .pricing__text-description {
+    font-size: 18px;
+    max-width: 600px;
+  }
+
+  .pricing__items {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .pricing__item-free,
+  .pricing__item-standard,
+  .pricing__item-business {
+    flex: 1;
+    max-width: none;
+  }
+
+  .pricing__item-standard {
+    transform: scale(1.05);
+  }
+}

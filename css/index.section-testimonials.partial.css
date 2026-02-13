@@ -1,0 +1,136 @@
+.testimonials {
+  font-family: graphik, sans-serif;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-color-primary);
+  margin: 0 0 40px 0;
+}
+
+.testimonials__logo {
+  margin-bottom: 40px;
+}
+
+.testimonials__logo svg {
+  max-width: 100%;
+  height: auto;
+  width: 150px;
+}
+
+.testimonials__description {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials__client-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.testimonials__client-content-photo {
+  flex-shrink: 0;
+}
+
+.testimonials__client-content-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonials__client-content-text {
+  text-align: left;
+}
+
+.testimonials__client-content-text-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color-primary);
+  margin: 0 0 4px 0;
+}
+
+.testimonials__client-content-text-position {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+  margin: 0;
+}
+
+.testimonials__button {
+  padding: 16px 40px;
+  background: #2091f9;
+  color: white;
+  border: none;
+  border-radius: 39px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.testimonials__button:hover {
+  background: #1a7ad6;
+}
+
+/* Desktop version (1024px+) */
+@media (min-width: 1024px) {
+  .testimonials {
+    padding: 80px 100px;
+  }
+
+  .testimonials__title {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+
+  .testimonials__logo {
+    margin-bottom: 50px;
+  }
+
+  .testimonials__logo svg {
+    width: 180px;
+  }
+
+  .testimonials__description {
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 50px;
+  }
+
+  .testimonials__client-content {
+    margin-bottom: 50px;
+  }
+
+  .testimonials__client-content-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonials__client-content-text-name {
+    font-size: 15px;
+  }
+
+  .testimonials__client-content-text-position {
+    font-size: 14px;
+  }
+
+  .testimonials__button {
+    padding: 18px 50px;
+    font-size: 15px;
+  }
+}

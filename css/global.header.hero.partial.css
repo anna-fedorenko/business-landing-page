@@ -1,4 +1,5 @@
 .header {
+  font-family: graphik, sans-serif;
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../img/header-photo.jpg");
@@ -22,7 +23,7 @@
 }
 
 .header__navbar-menu {
-  display: none; /* mobile */
+  display: none;
 }
 
 .header__navbar-logo img {
@@ -35,7 +36,6 @@
   gap: 20px;
 }
 
-/* ===== HERO ===== */
 .header__hero {
   flex: 1;
   display: flex;

@@ -1,0 +1,180 @@
+.footer {
+  font-family: graphik, sans-serif;
+  padding: 60px 20px;
+  background-color: #2f3e52;
+  color: #ffffff;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.footer__menu-pages,
+.footer__menu-tomothy,
+.footer__menu-jane {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__menu-pages-title,
+.footer__menu-tomothy-title,
+.footer__menu-jane-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.footer__menu-pages-list,
+.footer__menu-tomothy-list,
+.footer__menu-jane-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__menu-home,
+.footer__menu-product,
+.footer__menu-pricing,
+.footer__menu-about,
+.footer__menu-contact,
+.footer__menu-tomothy-eleanor,
+.footer__menu-tomothy-ted,
+.footer__menu-tomothy-anette,
+.footer__menu-tomothy-jennie,
+.footer__menu-tomothy-gloria,
+.footer__menu-jane-philip,
+.footer__menu-jane-product,
+.footer__menu-jane-colleen,
+.footer__menu-jane-marvin-,
+.footer__menu-jane-bruce {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.footer__menu-home:hover,
+.footer__menu-product:hover,
+.footer__menu-pricing:hover,
+.footer__menu-about:hover,
+.footer__menu-contact:hover,
+.footer__menu-tomothy-eleanor:hover,
+.footer__menu-tomothy-ted:hover,
+.footer__menu-tomothy-anette:hover,
+.footer__menu-tomothy-jennie:hover,
+.footer__menu-tomothy-gloria:hover,
+.footer__menu-jane-philip:hover,
+.footer__menu-jane-product:hover,
+.footer__menu-jane-colleen:hover,
+.footer__menu-jane-marvin-:hover,
+.footer__menu-jane-bruce:hover {
+  opacity: 0.7;
+}
+
+.footer__connection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.footer__connection-address,
+.footer__connection-phone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__connection-address-icon svg,
+.footer__connection-phone-icon svg {
+  flex-shrink: 0;
+}
+
+.footer__connection-address-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer__connection-social {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.footer__connection-social-twitter,
+.footer__connection-social-facebook,
+.footer__connection-social-linkedin {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.footer__connection-social-twitter:hover,
+.footer__connection-social-facebook:hover,
+.footer__connection-social-linkedin:hover {
+  opacity: 0.7;
+}
+
+.footer__connection-social-twitter svg,
+.footer__connection-social-facebook svg,
+.footer__connection-social-linkedin svg {
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 80px 100px;
+  }
+
+  .footer__menu {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-bottom: 80px;
+    text-align: left;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__menu-pages,
+  .footer__menu-tomothy,
+  .footer__menu-jane {
+    flex: 0 0 auto;
+    align-items: flex-start;
+  }
+
+  .footer__connection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer__connection-address {
+    flex: 0 0 auto;
+  }
+
+  .footer__connection-phone {
+    flex: 0 0 auto;
+  }
+
+  .footer__connection-social {
+    gap: 25px;
+    margin-left: auto;
+  }
+}
