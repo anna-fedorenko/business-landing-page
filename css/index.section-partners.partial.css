@@ -50,7 +50,7 @@
 .partners__item-uber,
 .partners__item-dropbox {
   background: var(--background-color-light);
-  border: 1px solid #e6e6e6;
+  border: 1px solid var(--border-color);
   padding: 30px;
   border-radius: 8px;
   display: flex;
@@ -103,7 +103,7 @@
 .partners__action-button {
   padding: 16px 32px;
   background: var(--accent-color);
-  color: var(--background-color-light);
+  color: var(--text-color-light);
   border: none;
   border-radius: 39px;
   font-size: 14px;

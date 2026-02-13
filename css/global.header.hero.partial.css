@@ -76,7 +76,6 @@
   }
 }
 
-/* ===== TABLET (≥768px) ===== */
 @media (min-width: 768px) {
   .header__navbar {
     padding: 30px 40px;
@@ -103,7 +102,6 @@
   }
 }
 
-/* ===== DESKTOP (≥1200px) ===== */
 @media (min-width: 1200px) {
   .header__navbar {
     max-width: 1200px;

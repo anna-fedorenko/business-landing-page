@@ -18,6 +18,7 @@ body {
 :root {
   scroll-behavior: smooth;
   --accent-color: #2091f9;
+  --accent-color-hover: #1a7ad6;
   --secondary-green-color: #2dc071;
   --secondary-orange-color: #f15b07;
   --text-color-primary: #252b42;
@@ -26,6 +27,8 @@ body {
   --background-color-dark: #252b42;
   --background-color-light: #ffffff;
   --background-color-gradient: #222b32;
+  --background-form-color: #f4f4f4;
+  --border-color: #e6e6e6;
 }
 
 img {

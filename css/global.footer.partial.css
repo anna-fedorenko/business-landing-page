@@ -1,8 +1,8 @@
 .footer {
   font-family: graphik, sans-serif;
   padding: 60px 20px;
-  background-color: #2f3e52;
-  color: #ffffff;
+  background-color: var(--background-color-dark);
+  color: var(--background-color-light);
 }
 
 .footer__menu {
@@ -26,7 +26,7 @@
 .footer__menu-jane-title {
   font-size: 18px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color-light);
   margin: 0 0 10px 0;
 }
 
@@ -58,7 +58,7 @@
 .footer__menu-jane-bruce {
   font-size: 14px;
   font-weight: 400;
-  color: #ffffff;
+  color:var(--text-color-light);
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
@@ -103,7 +103,7 @@
 .footer__connection-address-text {
   font-size: 14px;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--text-color-light);
   margin: 0;
 }
 

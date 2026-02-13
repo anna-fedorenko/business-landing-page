@@ -73,8 +73,8 @@
 
 .testimonials__button {
   padding: 16px 40px;
-  background: #2091f9;
-  color: white;
+  background: var(--accent-color);
+  color: var(--text-color-light);
   border: none;
   border-radius: 39px;
   font-size: 14px;
@@ -84,10 +84,9 @@
 }
 
 .testimonials__button:hover {
-  background: #1a7ad6;
+  background: var(--accent-color-hover);
 }
 
-/* Desktop version (1024px+) */
 @media (min-width: 1024px) {
   .testimonials {
     padding: 80px 100px;
