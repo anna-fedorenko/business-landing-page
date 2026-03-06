@@ -37,6 +37,8 @@
   padding: 14px 28px;
   border-radius: 50px;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 
 
