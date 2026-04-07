@@ -1,9 +1,3 @@
-/**
- * header.clock.js
- * Flip Clock — повна логіка анімації та оновлення часу
- * Залежності: global.header.hero.partial.html + global.header.hero.partial.css
- */
-
 (function () {
     'use strict';
 
